@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #99ffef;
+}
+
+#header {
+	background-color: #2d9dff;
+	text-align: center;
+	align-content: center;
+}
+
+#container {
+	background-color: white;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+#main {
+	
+}
+
+#footer {
+	background-color: black;
+	color: #808080;
+	text-align: right;
+}
