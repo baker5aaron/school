@@ -1,18 +1,76 @@
+<!DOCTYPE html>
+<html>
 <head>
-
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta charset="UTF-8">
-<title>North Travels</title>
+<title>
+North Travels
+</title>
+<script>
+function validateForm() {
+    var name = document.forms["infoForm"]["name"].value;
+    var email = document.forms["infoForm"]["email"].value;
+    var re = /\S+@\S+\.\S+/;
+    var valid = true;
+    
+    if(name == "") {
+    	document.getElementById("nameTxt").innerHTML = '* Required';
+    	valid = false;
+    }
+    
+    if(email == "") {
+    	document.getElementById("emailTxt").innerHTML = '* Required';
+    	valid = false;
+    }
+    
+    else if (!re.test(email)) {
+    	valid = false;
+    	document.getElementById("emailTxt").innerHTML = 'Invalid Email';
+    }
+    
+    if (valid == true ) {
+    	document.getElementById("result").innerHTML = 'Thank You!';
+    }
+    	
+    else {
+    	document.getElementById("result").innerHTML = 'Invalid';
+    }
+    return false;
+}
+</script>
 </head>
 <body>
-
-<p>Request Information<p>
-
+<div>
+<ul class="nav">
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="about.html">About</a>
+</li>
+<li>
+<a href="tours.html">Tours</a>
+</li>
+<li>
+<a href="request.html">Request Info</a>
+</ul>
+</div>
+<div class=contenthead>
+<h1>Request Information</h1>
+</div>
+<div class=content>
 <p>If you would like to get more information about taking one of these trips, fill out the form below and press submit.</p>
-
-
-
-
-
-
+<form name="infoForm" onsubmit="return validateForm()">
+Name :<input type="text" name="name"><p id="nameTxt"></p><br>
+Email :<input type="text" name="email"><p id="emailTxt"></p><br>
+Tours :<select name="Tours">
+  <option value="israel">See Israel</option>
+  <option value="holyLands">See Holy Lands</option>
+  <option value="museums">See Museums</option>
+</select><br><br>
+<input type="submit" value="Submit"><p id="result"></p>
+</form>
+<div class=footer>Contact North Travels at <a href="info@northtravels.com">info@northtravels.com</a></div>
+</div>
 </body>
 </html>

@@ -1,0 +1,156 @@
+@CHARSET "UTF-8";
+
+body {
+    background-color: black;
+    font-family: Ariel, sans-serif;
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align:center;
+}
+
+h3 {
+  border-top:3px solid #222;
+  padding:10px;
+  background:#ada6a6;
+}
+
+h3:hover {
+  background:#f4fcfc;
+    /*#d5eef2;*/
+}
+
+.h3 a {
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+
+a,a:link,a:visited {
+	color :white;
+}
+
+.about{
+	width: 250px;
+	padding: 10px;
+	float: left;
+}
+
+button {
+	background-color: #333;  
+    border: 2px solid white;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100px;
+}
+
+button:hover {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+div.contenthead {
+  margin: 0 auto;
+  width: 75%;
+  text-align:center;
+}
+
+div.content {
+  margin: 0 auto;
+  padding: 20 20;
+  width: 50%;
+}
+
+div.footer{
+	text-align: center;
+}
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #333;
+    text-align:center;
+}
+
+.nav li{
+    display:inline;
+}
+
+.nav a{
+    display:inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #111;
+}
+
+.img_row {
+	margin:0 auto; 
+    width:90%;
+    text-align:center;
+}
+
+.img_row img {
+	display: inline-block; 
+	width: 20%; 
+	object-fit: cover;
+}
+
+div.img_menu_row {
+	margin:0 auto; 
+    width:600px;
+    text-align:center;
+}
+
+
+div.img_grid {
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align:center;
+	float: left;
+    width: 180px;
+}
+
+div.img_grid:hover {
+    border: 1px solid #777;
+}
+
+div.img_grid img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.tourdiv {
+  margin: 0 auto;
+  width: 60%;
+  background:#e0e0e0;
+  border-bottom:3px solid #222;
+  color : black;
+}
+
+.tourblock {
+	color: black;
+	display: none;
+	padding: 10px 10px ;
+}
+
+form {
+	line-height: 100%;
+}

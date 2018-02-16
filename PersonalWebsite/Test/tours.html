@@ -1,34 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta charset="UTF-8">
 <title>North Travels</title>
+<script>
+function israelBtn() {
+	document.getElementById("locationPic").innerHTML = '<img src ="images/israel_300_225.jpg">';
+}
+function jordanBtn() {
+	document.getElementById("locationPic").innerHTML = '<img src ="images/jordan_300_225.jpg">';
+}
+function egyptBtn() {
+	document.getElementById("locationPic").innerHTML = '<img src ="images/egypt_300_225.jpg">';
+}
+function greeceBtn() {
+	document.getElementById("locationPic").innerHTML = '<img src ="images/greece_300_225.jpg">';
+}
+function turkeyBtn() {
+	document.getElementById("locationPic").innerHTML = '<img src ="images/turkey_300_225.jpg">';
+}
+
+function getPicBtn(element) {
+	x=element.getAttribute('id');
+	document.getElementById("locationPic").innerHTML = '<img src ="images/'+x+'_300_225.jpg">';
+}
+
+</script>
 </head>
 <body>
-<p>Tours<p>
-
+<ul class="nav">
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="about.html">About</a>
+</li>
+<li>
+<a href="tours.html">Tours</a>
+</li>
+<li>
+<a href="request.html">Request Info</a>
+</ul>
+<div class=contenthead>
+<h1>Tours</h1>
 <p>
 "Once you have visited the Holy Lands you will never hear a sermon, sing a song, listen to a Bible class lesson or read the scriptures in the same way."</p>
 
 
 <p>
 You can have a great life experience visiting the Holy Lands. You can walk up steps that Jesus walked on, you can walk on the roads that Paul walked on, and you can see sites that Moses saw.  It will be an experience you will never forget. We are talking these trips this year:</p>
+</div>
+<div class=content>
+<button class="accordion">See Israel - April 15-23</button>
+<div class="panel">
+<img class = "img_text" src="images/david_bev_jerusalem.jpg" width="150" height="112"><p>On this 21 day trip to Israel, Jordan, Egypt, Greece and Turkey you will see the greatest sites related to Biblical history including the Temple Mount in Jerusalem, Petra in Jordan, the Pyramids in Egypt, Ephesus in Turkey and the Acropolis in Athens.</p>
+</div>
 
-<ul>
-<li>See Israel - April 15-23 </li>
-<p> <img class = "img_text" src="images/david_bev_jerusalem.jpg" width="150" height="112">
-On this 9 day trip to Israel you will visit the best biblical sites in Israel.  They include Jerusalem, Capernaum, Caesarea, Mt. Carmel, Megiddo, Masada, and Bethlehem, Jordan River and the Sea of Galilee.
-</p>
-<li>See Holy Lands - June 1-22</li>
-<p ><img class = "img_text" src="images/greece_300_225.jpg" width="150" height="112">On this 21 day trip to Israel, Jordan, Egypt, Greece and Turkey you will see the greatest sites related to Biblical history including the Temple Mount in Jerusalem, Petra in Jordan, the Pyramids in Egypt, Ephesus in Turkey and the Acropolis in Athens.</p>
+<button class="accordion">See Holy Lands - June 1-22</button>
+<div class="panel">
+<img class = "img_text" src="images/greece_300_225.jpg" width="150" height="112"><p>On this 9 day trip to Israel you will visit the best biblical sites in Israel.  They include Jerusalem, Capernaum, Caesarea, Mt. Carmel, Megiddo, Masada, and Bethlehem, Jordan River and the Sea of Galilee.</p>
+</div>
 
-<li>See Museums - September 1-14</li>
-<p><img class = "img_text" src="images/british_museum_300_225.jpg" width="150" height="112">On this 14 day tour of 5 great museums in London, Paris, Athens, Cairo and Jerusalem you will visit the great museums with Bible artifacts. 
+<button class="accordion">See Museums - September 1-14</button>
+<div class="panel">
+<img class = "img_text" src="images/british_museum_300_225.jpg" width="150" height="112"><p>On this 14 day tour of 5 great museums in London, Paris, Athens, Cairo and Jerusalem you will visit the great museums with Bible artifacts. 
 In the British Museum you will see the Rosetta Stone, the Elgin Marbles, Lachish freeze, and the Cyrus cylinder.  In the Louvre you will see the Code of Hammurabi, the Moabite stone and glazed brick walls from the palace of Susa.  In Athens you will see many remains from the Acropolis.  
 In the Cairo Museum you will see the treasures of King Tut and the Merneptah Steele.  In the Israel Museum you will see the oldest written scriptures and the Tel Dan inscription with King David's name on it.
-</p>
+</p></div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<div class=footer>Contact North Travels at <a href="info@northtravels.com">info@northtravels.com</a></div>
 </body>
 </html>

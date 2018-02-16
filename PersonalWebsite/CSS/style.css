@@ -4,10 +4,37 @@ body {
 	background-color: #99ffef;
 }
 
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: #333;
+    text-align:center;
+}
+
+.nav li{
+    display:inline;
+}
+
+.nav a{
+    display:inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #111;
+}
+
 #header {
 	background-color: #2d9dff;
 	text-align: center;
 	align-content: center;
+	margin: auto;
+	width: 90%;
 }
 
 #container {
@@ -15,14 +42,65 @@ body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto; 
+	overflow: auto;
 }
 
 #main {
-	
+	width: 60%;
+	margin: auto;
+}
+
+div.img_menu {
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    float: left;
+    width: 180px;
 }
 
 #footer {
 	background-color: black;
 	color: #808080;
 	text-align: right;
+	width: 90%;
+	margin: auto;
 }
+
+#footer p{
+	margin: auto;
+	color: white;	
+}
+
+.img_row {
+	margin:0 auto; 
+    width:90%;
+    text-align:center;
+}
+
+.img_row img {
+	display: inline-block; 
+	width: 20%; 
+	object-fit: cover;
+}
+
+div.img_menu_row {
+	margin:0 auto; 
+    width:600px;
+    text-align:center;
+}
+
+div.img_menu img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+div.img_menu img:hover {
+	animation: shake .5s;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+

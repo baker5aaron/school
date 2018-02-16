@@ -10,8 +10,9 @@ h1 {
     color: white;
     text-align:center;
 }
+
 h3 {
-  border-top:3px solid #222;
+  border-top:3px solid black;
   padding:10px;
   background:#ada6a6;
 }
@@ -26,12 +27,16 @@ h3:hover {
   color:black;
   font-weight:bold;
 }
-p {
-	color : white;
-}
+
 
 a,a:link,a:visited {
 	color :white;
+}
+
+.about{
+	width: 250px;
+	padding: 10px;
+	float: left;
 }
 
 button {
@@ -44,24 +49,30 @@ button {
     font-size: 16px;
     width: 100px;
 }
+
 button:hover {
-    
     background-color: #e7e7e7;
     color: black;
 }
-div.text_heading {
+
+div.contenthead {
   margin: 0 auto;
   width: 75%;
   text-align:center;
 }
 
-div.text_block {
+div.content {
   margin: 0 auto;
   padding: 20 20;
-  width: 75%;
+  width: 50%;
 }
-.nav{
 
+div.footer{
+	text-align: center;
+	padding: 10px;
+}
+
+.nav{
     list-style:none;
     margin:0;
     padding:0;
@@ -69,9 +80,11 @@ div.text_block {
     background-color: #333;
     text-align:center;
 }
+
 .nav li{
     display:inline;
 }
+
 .nav a{
     display:inline-block;
     color: white;
@@ -89,40 +102,20 @@ div.text_block {
     width:90%;
     text-align:center;
 }
+
 .img_row img {
-	display: inline-block;  
-}
-div.img_menu_row {
-	margin:0 auto; 
-    width:600px;
-    text-align:center;
+	display: inline-block; 
+	width: 20%; 
+	object-fit: cover;
 }
 
-
-div.img_menu {
-    margin: 5px;
-    border: 1px solid #ccc;
-    text-align:center;
-	float: left;
-    width: 180px;
-}
-
-div.img_menu:hover {
-    border: 1px solid #777;
-}
-
-div.img_menu img {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-}
 
 div.desc {
     padding: 15px;
     text-align: center;
 }
 
-.gkdiv {
+.tourdiv {
   margin: 0 auto;
   width: 60%;
   background:#e0e0e0;
@@ -130,8 +123,63 @@ div.desc {
   color : black;
 }
 
-.gkblock {
+.tourblock {
 	color: black;
 	display: none;
 	padding: 10px 10px ;
+}
+
+form {
+	line-height: 100%;
+}
+
+.accordion {
+    background-color: #ada6a6;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 85%;
+    border-top: 3px solid #222;
+    text-align: center;
+    outline: none;
+    font-size: 1.17em;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ada6a6;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #e0e0e0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 81%;
+}
+
+.panel img{
+	float: left;
+	padding: 10px;
+}
+
+.panel p{
+	color: black;
+	text-align: center;
+	font-weight: bold;
 }

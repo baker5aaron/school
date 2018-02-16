@@ -6,7 +6,23 @@
 <title>
 North Travels
 </title>
-
+<script>
+function iButton() {
+	document.getElementById("locations").innerHTML = '<img src ="images/israel_300_225.jpg">';
+}
+function jButton() {
+	document.getElementById("locations").innerHTML = '<img src ="images/jordan_300_225.jpg">';
+}
+function eButton() {
+	document.getElementById("locations").innerHTML = '<img src ="images/egypt_300_225.jpg">';
+}
+function gButton() {
+	document.getElementById("locations").innerHTML = '<img src ="images/greece_300_225.jpg">';
+}
+function tButton() {
+	document.getElementById("locations").innerHTML = '<img src ="images/turkey_300_225.jpg">';
+}
+</script>
 </head>
 <body>
 <div>
@@ -24,28 +40,38 @@ North Travels
 <a href="request.html">Request Info</a>
 </ul>
 </div>
+<div class=contenthead>
 <h1>North Travels</h1>
 
 
 <p>
 "Once you have visited the Holy Lands you will never hear a sermon, sing a song, listen to a Bible class lesson or read the scriptures in the same way."</p>
+</div>
 
-
-
+<div class=img_row>
 <img src="images/greece_300_225.jpg" alt="Parthenon on the Acropolis in Athens.">
 <img src="images/david_bev_cammel_300_225.jpg" alt="David and Beverly on a cammel at the pyramids in Cairo.">
 <img src="images/david_bev_jerusalem.jpg" alt="David and Beverly in Jerusalem looking over the temple mount">
+</div>
 
-
+<div class=content>
 <p>
 You can have a great life experience visiting the Holy Lands. You can walk up steps that Jesus walked on, you can walk on the roads that Paul walked on, and you can see sites that Moses saw.  It will be an experience you will never forget. We are talking these trips this year:</p>
 
-
-<p>See Israel - April 15-23 - make a 9 day trip to Israel</li>
-<p>See Holy Lands - June 1-22 - make a 21 day trip to Israel, Jordan, Egypt, Greece and Turkey.</li>
-<p>See Museums - September 1-14 - make a 14 day tour of 5 great museums in London, Paris, Athens, Cairo and Jerusalem.</li>
-
-
-
+<ul>
+<li>See Israel - April 15-23 - make a 9 day trip to Israel</li>
+<li>See Holy Lands - June 1-22 - make a 21 day trip to Israel, Jordan, Egypt, Greece and Turkey.</li>
+<li>See Museums - September 1-14 - make a 14 day tour of 5 great museums in London, Paris, Athens, Cairo and Jerusalem.</li>
+</ul>
+<div class="contenthead">
+<button class="button" onclick="iButton()">Israel</button> 
+<button class="button" onclick="jButton()">Jordan</button> 
+<button class="button" onclick="eButton()">Egypt</button> 
+<button class="button" onclick="tButton()">Turkey</button> 
+<button clsass="button" onclick="gButton()">Greece</button> 
+</div>
+<div id="locations" class="img_row"></div>
+<div class=footer>Contact North Travels at <a href="info@northtravels.com">info@northtravels.com</a></div>
+</div>
 </body>
 </html>
